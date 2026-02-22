@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- ============================================
+       HEADER
+       Pas aan: logo tekst, telefoonnummer, links
+       ============================================ -->
+  <header class="header">
+    <div class="container">
+      <a href="#" class="logo">
+        <div class="logo-icon">FJ</div>
+        <div class="logo-text">
+          <span class="logo-naam">FunJump</span>
+          <span class="logo-sub">Springkastelen</span>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a href="#springkastelen">Springkastelen</a>
+        <a href="#voordelen">Waarom Wij</a>
+        <a href="#offerte">Offerte</a>
+      </nav>
+
+      <div class="header-rechts">
+        <a href="tel:+32123456789" class="header-telefoon">+32 123 45 67 89</a>
+        <a href="#offerte" class="btn btn-primary">Offerte Aanvragen</a>
+      </div>
+
+      <button class="hamburger" onclick="document.getElementById('mobielMenu').classList.toggle('open')" aria-label="Menu openen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div id="mobielMenu" class="mobiel-menu">
+      <a href="#springkastelen" onclick="document.getElementById('mobielMenu').classList.remove('open')">Springkastelen</a>
+      <a href="#voordelen" onclick="document.getElementById('mobielMenu').classList.remove('open')">Waarom Wij</a>
+      <a href="#offerte" onclick="document.getElementById('mobielMenu').classList.remove('open')">Offerte</a>
+      <a href="tel:+32123456789">+32 123 45 67 89</a>
+      <a href="#offerte" class="btn btn-primary" onclick="document.getElementById('mobielMenu').classList.remove('open')">Offerte Aanvragen</a>
+    </div>
+  </header>
+
+  <!-- ============================================
+       HERO SECTIE
+       Pas aan: titel, beschrijving, afbeelding
+       ============================================ -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-tekst">
+        <h1>Welkom bij FunJump</h1>
+        <p>Verhuur van springkastelen voor onvergetelijke feesten en evenementen. Veilig, proper en altijd plezier gegarandeerd!</p>
+        <div class="hero-knoppen">
+          <a href="#offerte" class="btn btn-primary">Offerte Aanvragen</a>
+          <a href="#springkastelen" class="btn btn-outline">Bekijk Springkastelen</a>
+        </div>
+      </div>
+      <div class="hero-afbeelding">
+        <!-- VERANDER HIER DE AFBEELDING: vervang "images/hero-bouncy-castle.jpg" door jouw foto -->
+        <img src="images/hero-bouncy-castle.jpg" alt="Kleurrijk springkasteel opgesteld voor een feest">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       VOORDELEN SECTIE
+       Pas aan: titels en beschrijvingen
+       ============================================ -->
+  <section id="voordelen" class="voordelen">
+    <div class="container">
+      <div class="sectie-titel">
+        <h2>Waarom Kiezen voor FunJump?</h2>
+        <p>Wij zorgen voor een zorgeloze ervaring, van reservering tot ophaling.</p>
+      </div>
+
+      <div class="voordelen-grid">
+        <div class="voordeel-kaart">
+          <div class="voordeel-icoon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3>Veiligheid Eerst</h3>
+          <p>Al onze springkastelen voldoen aan de hoogste veiligheidseisen en worden regelmatig gecontroleerd.</p>
+        </div>
+
+        <div class="voordeel-kaart">
+          <div class="voordeel-icoon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
+            </svg>
+          </div>
+          <h3>Hygiene &amp; Schoonmaak</h3>
+          <p>Na elk gebruik worden onze springkastelen grondig gereinigd en gedesinfecteerd.</p>
+        </div>
+
+        <div class="voordeel-kaart">
+          <div class="voordeel-icoon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 18V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/>
+              <path d="M15 18H9"/>
+              <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/>
+              <circle cx="17" cy="18" r="2"/>
+              <circle cx="7" cy="18" r="2"/>
+            </svg>
+          </div>
+          <h3>Levering &amp; Opstelling</h3>
+          <p>Wij leveren, stellen op en halen weer op. U hoeft zich nergens zorgen over te maken.</p>
+        </div>
+
+        <div class="voordeel-kaart">
+          <div class="voordeel-icoon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="12" y1="8" x2="12" y2="12"/>
+              <line x1="12" y1="16" x2="12.01" y2="16"/>
+            </svg>
+          </div>
+          <h3>Eerlijke Prijzen</h3>
+          <p>Transparante prijzen zonder verborgen kosten. Vraag vrijblijvend een offerte aan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SPRINGKASTELEN SECTIE
+       Pas aan: namen, beschrijvingen, foto's, kenmerken
+       Kopieer een "kasteel-kaart" blok om er meer toe te voegen
+       ============================================ -->
+  <section id="springkastelen" class="springkastelen">
+    <div class="container">
+      <div class="sectie-titel">
+        <h2>Onze Springkastelen</h2>
+        <p>Ontdek onze geweldige collectie springkastelen, perfect voor elk feest!</p>
+      </div>
+
+      <div class="kastelen-grid">
+
+        <!-- SPRINGKASTEEL 1 -->
+        <div class="kasteel-kaart">
+          <div class="kasteel-foto">
+            <img src="images/castle-1.jpg" alt="Giraf Springkasteel">
+          </div>
+          <div class="kasteel-info">
+            <h3>Giraf Springkasteel</h3>
+            <p>Een geweldig springkasteel in de vorm van een vrolijke giraf. Perfect voor kinderfeestjes!</p>
+            <ul class="kasteel-features">
+              <li>Geschikt voor binnen en buiten</li>
+              <li>Inclusief leuke 3D-elementen</li>
+              <li>Geschikt voor 8-10 kinderen</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- SPRINGKASTEEL 2 -->
+        <div class="kasteel-kaart">
+          <div class="kasteel-foto">
+            <img src="images/castle-2.jpg" alt="Piraten Springkasteel">
+          </div>
+          <div class="kasteel-info">
+            <h3>Piraten Springkasteel</h3>
+            <p>Avontuurlijk piraten springkasteel met glijbaan. Ideaal voor stoere feestjes!</p>
+            <ul class="kasteel-features">
+              <li>Met glijbaan</li>
+              <li>Geschikt voor 10-12 kinderen</li>
+              <li>Opvallend piratenthema</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- SPRINGKASTEEL 3 -->
+        <div class="kasteel-kaart">
+          <div class="kasteel-foto">
+            <img src="images/castle-3.jpg" alt="Prinses Springkasteel">
+          </div>
+          <div class="kasteel-info">
+            <h3>Prinses Springkasteel</h3>
+            <p>Magisch prinsessen springkasteel dat elke kleine prinses zal bekoren.</p>
+            <ul class="kasteel-features">
+              <li>Prachtige kleuren</li>
+              <li>Geschikt voor 10-12 kinderen</li>
+              <li>Sprookjesachtig ontwerp</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       OFFERTE FORMULIER
+       Pas aan: prijzen, springkasteelnamen, contact
+       ============================================ -->
+  <section id="offerte" class="offerte">
+    <div class="container">
+      <div class="sectie-titel">
+        <h2>Klaar voor een Onvergetelijk Feest?</h2>
+        <div class="offerte-prijzen">
+          <span>Dagverhuur vanaf &euro;110</span>
+          <span>|</span>
+          <span>Weekend vanaf &euro;160</span>
+        </div>
+        <div class="offerte-extra">
+          <span>Inclusief levering binnen 15km</span>
+          <span>Slecht weer garantie</span>
+        </div>
+      </div>
+
+      <div class="offerte-layout">
+        <div class="offerte-formulier">
+          <form action="#" method="POST">
+            <div class="form-groep">
+              <label for="naam">Naam *</label>
+              <input type="text" id="naam" name="naam" placeholder="Uw volledige naam" required>
+            </div>
+            <div class="form-groep">
+              <label for="email">E-mailadres *</label>
+              <input type="email" id="email" name="email" placeholder="uw@email.be" required>
+            </div>
+            <div class="form-groep">
+              <label for="adres">Adres *</label>
+              <input type="text" id="adres" name="adres" placeholder="Straat en huisnummer, postcode, gemeente" required>
+            </div>
+            <div class="form-groep">
+              <label for="gsm">GSM Nummer *</label>
+              <input type="tel" id="gsm" name="gsm" placeholder="+32 4XX XX XX XX" required>
+            </div>
+            <div class="form-rij">
+              <div class="form-groep">
+                <label for="datum">Verhuurdatum</label>
+                <input type="date" id="datum" name="datum">
+              </div>
+              <div class="form-groep">
+                <label for="periode">Verhuurperiode *</label>
+                <select id="periode" name="periode" required>
+                  <option value="" disabled selected>Selecteer periode</option>
+                  <option value="1dag">1 dag</option>
+                  <option value="2dagen">2 dagen</option>
+                  <option value="weekend">Weekend</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-groep">
+              <label for="springkasteel">Springkasteel *</label>
+              <!-- VOEG HIER NIEUWE SPRINGKASTELEN TOE door meer <option> regels te kopieren -->
+              <select id="springkasteel" name="springkasteel" required>
+                <option value="" disabled selected>Selecteer springkasteel</option>
+                <option value="giraf">Giraf Springkasteel</option>
+                <option value="piraten">Piraten Springkasteel</option>
+                <option value="prinses">Prinses Springkasteel</option>
+              </select>
+            </div>
+            <div class="form-groep">
+              <label for="extra">Extra informatie</label>
+              <textarea id="extra" name="extra" placeholder="Eventuele opmerkingen of vragen..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">Verstuur Aanvraag</button>
+          </form>
+        </div>
+
+        <div class="offerte-contact">
+          <p>Of neem direct contact met ons op:</p>
+          <div class="contact-item">
+            <div class="contact-icoon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="16" x="2" y="4" rx="2"/>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-label">E-mail</div>
+              <div class="contact-waarde"><a href="mailto:info@funjump.be">info@funjump.be</a></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icoon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-label">Telefoon</div>
+              <div class="contact-waarde"><a href="tel:+32123456789">+32 123 45 67 89</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       Pas aan: adres, telefoon, email, social links
+       ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#" class="logo">
+            <div class="logo-icon">FJ</div>
+            <div class="logo-text">
+              <span class="logo-naam">FunJump</span>
+              <span class="logo-sub">Springkastelen</span>
+            </div>
+          </a>
+          <p class="footer-beschrijving">Uw betrouwbare partner voor de verhuur van springkastelen. Plezier gegarandeerd bij elk evenement!</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3>Snelle Links</h3>
+          <ul>
+            <li><a href="#springkastelen">Springkastelen</a></li>
+            <li><a href="#voordelen">Waarom Wij</a></li>
+            <li><a href="#offerte">Offerte Aanvragen</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Contact</h3>
+          <ul class="footer-contact">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <a href="tel:+32123456789">+32 123 45 67 89</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <a href="mailto:info@funjump.be">info@funjump.be</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              Voorbeeldstraat 123, 8500 Kortrijk
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-onder">
+        <p>&copy; 2026 FunJump. Alle rechten voorbehouden.</p>
+        <div class="footer-onder-links">
+          <a href="#">Privacybeleid</a>
+          <a href="#">Algemene Voorwaarden</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</html>
