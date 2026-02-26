@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
 <!-- ============================================
@@ -12,10 +13,9 @@
        ============================================ -->
   <header class="header">
     <div class="container">
-      <a href="#" class="logo">
-        <div class="logo-icon">FJ</div>
+      <a href="images/logo springkastelen.jpg" class="logo">
         <div class="logo-text">
-          <span class="logo-naam">FunJump</span>
+          <span class="logo-naam">Glenn's Spring &amp; Fun Verhuur</span>
           <span class="logo-sub">Springkastelen</span>
         </div>
       </a>
@@ -27,7 +27,7 @@
       </nav>
 
       <div class="header-rechts">
-        <a href="tel:+32123456789" class="header-telefoon">+32 123 45 67 89</a>
+        <a href="tel:+32123456789" class="header-telefoon">+32 472 02 78 87</a>
         <a href="#offerte" class="btn btn-primary">Offerte Aanvragen</a>
       </div>
 
@@ -40,7 +40,7 @@
       <a href="#springkastelen" onclick="document.getElementById('mobielMenu').classList.remove('open')">Springkastelen</a>
       <a href="#voordelen" onclick="document.getElementById('mobielMenu').classList.remove('open')">Waarom Wij</a>
       <a href="#offerte" onclick="document.getElementById('mobielMenu').classList.remove('open')">Offerte</a>
-      <a href="tel:+32123456789">+32 123 45 67 89</a>
+      <a href="tel:+32123456789">+32 472 02 78 87</a>
       <a href="#offerte" class="btn btn-primary" onclick="document.getElementById('mobielMenu').classList.remove('open')">Offerte Aanvragen</a>
     </div>
   </header>
@@ -52,7 +52,7 @@
   <section class="hero">
     <div class="container">
       <div class="hero-tekst">
-        <h1>Welkom bij FunJump</h1>
+        <h1>Welkom bij Glenn's Spring &amp; Fun Verhuur</h1>
         <p>Verhuur van springkastelen voor onvergetelijke feesten en evenementen. Veilig, proper en altijd plezier gegarandeerd!</p>
         <div class="hero-knoppen">
           <a href="#offerte" class="btn btn-primary">Offerte Aanvragen</a>
@@ -61,7 +61,7 @@
       </div>
       <div class="hero-afbeelding">
         <!-- VERANDER HIER DE AFBEELDING: vervang "images/hero-bouncy-castle.jpg" door jouw foto -->
-        <img src="images/hero-bouncy-castle.jpg" alt="Kleurrijk springkasteel opgesteld voor een feest">
+        <img src="images/Brandweer_springkasteel.jpg" alt="Kleurrijk springkasteel opgesteld voor een feest">
       </div>
     </div>
   </section>
@@ -73,7 +73,7 @@
   <section id="voordelen" class="voordelen">
     <div class="container">
       <div class="sectie-titel">
-        <h2>Waarom Kiezen voor FunJump?</h2>
+        <h2>Waarom Kiezen voor Glenn's Spring &amp; Fun Verhuur?</h2>
         <p>Wij zorgen voor een zorgeloze ervaring, van reservering tot ophaling.</p>
       </div>
 
@@ -140,19 +140,18 @@
       </div>
 
       <div class="kastelen-grid">
-
         <!-- SPRINGKASTEEL 1 -->
         <div class="kasteel-kaart">
           <div class="kasteel-foto">
-            <img src="images/castle-1.jpg" alt="Giraf Springkasteel">
+            <img src="images/Oceaan_springkasteel.jpg" alt="Oceaan Springkasteel">
           </div>
           <div class="kasteel-info">
-            <h3>Giraf Springkasteel</h3>
-            <p>Een geweldig springkasteel in de vorm van een vrolijke giraf. Perfect voor kinderfeestjes!</p>
+            <h3>Oceaan Springkasteel</h3>
+            <p>Avontuurlijk oceaan springkasteel met glijbaan. Ideaal voor aquatishe feestjes!</p>
             <ul class="kasteel-features">
-              <li>Geschikt voor binnen en buiten</li>
-              <li>Inclusief leuke 3D-elementen</li>
-              <li>Geschikt voor 8-10 kinderen</li>
+              <li>Met glijbaan</li>
+              <li>Geschikt voor 10-12 kinderen</li>
+              <li>Opvallend oceaanthema</li>
             </ul>
           </div>
         </div>
@@ -160,31 +159,14 @@
         <!-- SPRINGKASTEEL 2 -->
         <div class="kasteel-kaart">
           <div class="kasteel-foto">
-            <img src="images/castle-2.jpg" alt="Piraten Springkasteel">
+            <img src="images/Brandweer_springkasteel.jpg" alt="Brandweer Springkasteel">
           </div>
           <div class="kasteel-info">
-            <h3>Piraten Springkasteel</h3>
-            <p>Avontuurlijk piraten springkasteel met glijbaan. Ideaal voor stoere feestjes!</p>
-            <ul class="kasteel-features">
-              <li>Met glijbaan</li>
-              <li>Geschikt voor 10-12 kinderen</li>
-              <li>Opvallend piratenthema</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- SPRINGKASTEEL 3 -->
-        <div class="kasteel-kaart">
-          <div class="kasteel-foto">
-            <img src="images/castle-3.jpg" alt="Prinses Springkasteel">
-          </div>
-          <div class="kasteel-info">
-            <h3>Prinses Springkasteel</h3>
-            <p>Magisch prinsessen springkasteel dat elke kleine prinses zal bekoren.</p>
+            <h3>Brandweer Springkasteel</h3>
+            <p>Leuk brandweerspringkasteel met een eigen brandweerwagen. Perfect voor kinderen die dromen van een avontuur!</p>
             <ul class="kasteel-features">
               <li>Prachtige kleuren</li>
               <li>Geschikt voor 10-12 kinderen</li>
-              <li>Sprookjesachtig ontwerp</li>
             </ul>
           </div>
         </div>
@@ -251,9 +233,8 @@
               <!-- VOEG HIER NIEUWE SPRINGKASTELEN TOE door meer <option> regels te kopieren -->
               <select id="springkasteel" name="springkasteel" required>
                 <option value="" disabled selected>Selecteer springkasteel</option>
-                <option value="giraf">Giraf Springkasteel</option>
-                <option value="piraten">Piraten Springkasteel</option>
-                <option value="prinses">Prinses Springkasteel</option>
+                <option value="brandweer">Brandweer Springkasteel</option>
+                <option value="oceaan">Oceaan Springkasteel</option>
               </select>
             </div>
             <div class="form-groep">
@@ -275,7 +256,7 @@
             </div>
             <div>
               <div class="contact-label">E-mail</div>
-              <div class="contact-waarde"><a href="mailto:info@funjump.be">info@funjump.be</a></div>
+              <div class="contact-waarde"><a href="mailto:info@funjump.be"></a></div>
             </div>
           </div>
           <div class="contact-item">
@@ -305,7 +286,7 @@
           <a href="#" class="logo">
             <div class="logo-icon">FJ</div>
             <div class="logo-text">
-              <span class="logo-naam">FunJump</span>
+              <span class="logo-naam">Glenn's Spring & Fun Verhuur</span>
               <span class="logo-sub">Springkastelen</span>
             </div>
           </a>
@@ -349,7 +330,7 @@
       </div>
 
       <div class="footer-onder">
-        <p>&copy; 2026 FunJump. Alle rechten voorbehouden.</p>
+        <p>&copy; 2026 Glenn's Spring & Fun Verhuur. Alle rechten voorbehouden.</p>
         <div class="footer-onder-links">
           <a href="#">Privacybeleid</a>
           <a href="#">Algemene Voorwaarden</a>
