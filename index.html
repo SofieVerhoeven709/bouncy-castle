@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+    <link rel="icon" href="images/logo springkastelen.jpg" type="icon">
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
@@ -141,34 +142,60 @@
         <!-- SPRINGKASTEEL 1 -->
         <div class="kasteel-kaart">
           <div class="kasteel-foto">
-            <img src="images/Oceaan_springkasteel.jpg" alt="Oceaan Springkasteel">
-          </div>
-          <div class="kasteel-info">
-            <h3>Oceaan Springkasteel</h3>
-            <p>Avontuurlijk oceaan springkasteel met glijbaan. Ideaal voor aquatishe feestjes!</p>
-            <ul class="kasteel-features">
-              <li>Met glijbaan</li>
-              <li>Geschikt voor 10-12 kinderen</li>
-              <li>Opvallend oceaanthema</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- SPRINGKASTEEL 2 -->
-        <div class="kasteel-kaart">
-          <div class="kasteel-foto">
             <img src="images/Brandweer_springkasteel.jpg" alt="Brandweer Springkasteel">
           </div>
           <div class="kasteel-info">
             <h3>Brandweer Springkasteel</h3>
             <p>Leuk brandweerspringkasteel met een eigen brandweerwagen. Perfect voor kinderen die dromen van een avontuur!</p>
             <ul class="kasteel-features">
-              <li>Prachtige kleuren</li>
+              <li>€110 per dag</li>
               <li>Geschikt voor 10-12 kinderen</li>
             </ul>
           </div>
         </div>
+<!-- SPRINGKASTEEL 2 -->
+        <div class="kasteel-kaart">
+          <div class="kasteel-foto">
+            <img src="images/panda_springkasteel.jpg" alt="Panda Springkasteel">
+          </div>
+          <div class="kasteel-info">
+            <h3>Panda Springkasteel</h3>
+            <p>Leuk springkasteel in panda thema. Perfect voor kinderen die dromen van een avontuur!</p>
+            <ul class="kasteel-features">
+              <li>€70 per dag</li>
+              <li>Geschikt voor kinderen van 1 tot 6 jaar</li>
+            </ul>
+          </div>
+        </div>
 
+        <!-- SPRINGKASTEEL 3 -->
+        <div class="kasteel-kaart">
+          <div class="kasteel-foto">
+            <img src="images/safari_springkasteel.jpg" alt="Safari Springkasteel">
+          </div>
+          <div class="kasteel-info">
+            <h3>Safari Springkasteel</h3>
+            <p>Avontuurlijk safari springkasteel voor grote groepen. Ideaal voor safari-feestjes!</p>
+            <ul class="kasteel-features">
+              <li>€100 per dag</li>
+              <li>Geschikt voor grote groepen, max 7 tot 10 kinderen</li>
+            </ul>
+          </div>
+        </div>
+<!-- SPRINGKASTEEL 4 -->
+        <div class="kasteel-kaart">
+          <div class="kasteel-foto">
+            <img src="images/vissen_springkasteel.jpg" alt="Vissen Springkasteel">
+          </div>
+          <div class="kasteel-info">
+            <h3>Vissen Springkasteel</h3>
+            <p>Leuk springkasteel in vissen thema. Perfect voor kinderen die dol zijn van vissen!</p>
+            <ul class="kasteel-features">
+              <li>€100 per dag</li>
+              <li>Geschikt voor kinderen van 1 tot 6 jaar</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -196,17 +223,39 @@
       <div class="offerte-layout">
         <div class="offerte-formulier">
           <form action="#" method="POST">
-            <div class="form-groep">
-              <label for="naam">Naam *</label>
-              <input type="text" id="naam" name="naam" placeholder="Uw volledige naam" required>
+            <div class="form-rij">
+              <div class="form-groep">
+                <label for="voornaam">Voornaam *</label>
+                <input type="text" id="voornaam" name="voornaam" placeholder="Voornaam" required>
+              </div>
+              <div class="form-groep">
+                <label for="achternaam">Achternaam *</label>
+                <input type="text" id="achternaam" name="achternaam" placeholder="Achternaam" required>
+              </div>
             </div>
             <div class="form-groep">
               <label for="email">E-mailadres *</label>
               <input type="email" id="email" name="email" placeholder="uw@email.be" required>
             </div>
-            <div class="form-groep">
-              <label for="adres">Adres *</label>
-              <input type="text" id="adres" name="adres" placeholder="Straat en huisnummer, postcode, gemeente" required>
+            <div class="form-rij">
+              <div class="form-groep">
+                <label for="straat">Straat *</label>
+                <input type="text" id="straat" name="straat" placeholder="Straatnaam" required>
+              </div>
+              <div class="form-groep">
+                <label for="huisnummer">Huisnummer *</label>
+                <input type="text" id="huisnummer" name="huisnummer" placeholder="Nr." required>
+              </div>
+            </div>
+            <div class="form-rij">
+              <div class="form-groep">
+                <label for="postcode">Postcode *</label>
+                <input type="text" id="postcode" name="postcode" placeholder="Postcode" required>
+              </div>
+              <div class="form-groep">
+                <label for="gemeente">Gemeente *</label>
+                <input type="text" id="gemeente" name="gemeente" placeholder="Gemeente" required>
+              </div>
             </div>
             <div class="form-groep">
               <label for="gsm">GSM Nummer *</label>
@@ -233,7 +282,9 @@
               <select id="springkasteel" name="springkasteel" required>
                 <option value="" disabled selected>Selecteer springkasteel</option>
                 <option value="brandweer">Brandweer Springkasteel</option>
-                <option value="oceaan">Oceaan Springkasteel</option>
+                <option value="safari">Safari Springkasteel</option>
+                <option value="panda">Panda Springkasteel</option>
+               <option value="vissen">Vissen Springkasteel</option> 
               </select>
             </div>
             <div class="form-groep">
@@ -255,7 +306,7 @@
             </div>
             <div>
               <div class="contact-label">E-mail</div>
-              <div class="contact-waarde"><a href="mailto:info@funjump.be"></a></div>
+              <div class="contact-waarde"><a href="mailto:Glenns-spring-fun-verhuur@hotmail.com">glenns-spring-en-fun-verhuur@hotmail.com</a></div>
             </div>
           </div>
           <div class="contact-item">
@@ -316,7 +367,7 @@
             </li>
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-              <a href="mailto:info@funjump.be">info@funjump.be</a>
+              <a href="mailto:Glenns-spring-fun-verhuur@hotmail.com">Glenns-spring-fun-verhuur@hotmail.com</a>
             </li>
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
