@@ -1,4 +1,4 @@
-fetch("content/springkastelen.json")
+fetch("/content/springkastelen.json")
   .then((r) => r.json())
   .then((data) => {
     const items = (data && data.items) ? data.items : [];
