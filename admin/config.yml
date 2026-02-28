@@ -1,0 +1,23 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "updates"
+    label: "Updates"
+    files:
+      - file: "content/updates/updates.json"
+        label: "Updates lijst"
+        name: "updates"
+        fields:
+          - label: "Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Datum", name: "date", widget: "datetime" }
+              - { label: "Tekst", name: "text", widget: "text" }
+              - { label: "Afbeelding", name: "image", widget: "image", required: false }
