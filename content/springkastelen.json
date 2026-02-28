@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "name": "Brandweer Springkasteel",
+      "description": "Leuk brandweerspringkasteel met een eigen brandweerwagen. Perfect voor kinderen die dromen van een avontuur!",
+      "price": "€110 per dag",
+      "capacity": "Geschikt voor 10-12 kinderen",
+      "image": "images/Brandweer_springkasteel.jpg"
+    },
+    {
+      "name": "Panda Springkasteel",
+      "description": "Leuk springkasteel in panda thema. Perfect voor kinderen die dromen van een avontuur!",
+      "price": "€70 per dag",
+      "capacity": "Geschikt voor kinderen van 1 tot 6 jaar",
+      "image": "images/panda_springkasteel.jpg"
+    },
+    {
+      "name": "Safari Springkasteel",
+      "description": "Avontuurlijk safari springkasteel voor grote groepen. Ideaal voor safari-feestjes!",
+      "price": "€100 per dag",
+      "capacity": "Geschikt voor grote groepen, max 7 tot 10 kinderen",
+      "image": "images/safari_springkasteel.jpg"
+    },
+    {
+      "name": "Vissen Springkasteel",
+      "description": "Leuk springkasteel in vissen thema. Perfect voor kinderen die dol zijn van vissen!",
+      "price": "€100 per dag",
+      "capacity": "Geschikt voor kinderen van 1 tot 6 jaar",
+      "image": "images/vissen_springkasteel.jpg"
+    }
+  ]
+}
